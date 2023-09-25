@@ -1,0 +1,616 @@
+@import url('https://fonts.cdnfonts.com/css/sketch-rockwell');
+body, html {
+  height: 100%;
+  margin: 0;
+  background: #fffffe;
+  background-image: linear-gradient(#faeee7 .1em, transparent .1em), linear-gradient(90deg, #faeee7 .1em, transparent .1em);
+  background-size: 3em 3em;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgb(163, 163, 163);	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+                        
+}
+
+  
+.headimg {
+  height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+h1 {
+  color: #545b60;
+  font-family: 'Sketch Rockwell', sans-serif;
+  white-space: normal;
+
+}
+
+.intro {
+  margin-top: 10px;
+  margin-left: 8%;
+  background-image: url(../art_profile/protfolio/icon.png);
+  height: 63%;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: 90%;
+}
+
+.intro p{
+  font-family: Courier, monospace;
+  font-size: large;
+  vertical-align: top;
+}
+
+.intro h1{
+  padding-left: 15px;
+  font-size: xxx-large;
+  
+}
+
+nav {
+  overflow: hidden;
+  background-color: #fffffe00;
+  padding-right: 7%;
+  
+}
+
+nav a {
+  float: right;
+  font-size: 16px;
+  color: #232946;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-family: 'Sketch Rockwell', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 28px 0 0 0;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
+}
+
+.arrow1 {
+  position:relative;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 15px;
+  transform: rotate(-135deg);
+  left: 83px;
+  top: 143px;
+}
+
+.arrow2 {
+  position: relative;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 15px;
+  transform: rotate(-315deg);
+  left: 83px;
+  bottom: -134px;
+}
+
+.vl {
+  position:absolute;
+  border-left: 3px solid black;
+  height: 365%;
+  left: 6%;
+}
+.vl1 {
+  position:absolute;
+  border-left: 3px solid black;
+  height: 365%;
+  left: 94%;
+}
+
+h2 {
+  margin-left: 8%;
+  color: #545b60;
+  font-family: 'Sketch Rockwell', sans-serif;
+  font-size: xxx-large;
+  margin-block: 1%;
+}
+
+hr.style5 {
+	background-color: #fff;
+	border-top: 3px dashed #8c8b8b;
+  margin-block: 0%;
+}
+
+hr.style2 {
+	border-top: 1px dashed #8c8b8b;
+}
+
+.row {
+  margin-left: 8%;
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  position: relative;
+  -ms-flex: 25%; 
+  flex: 33%;
+  max-width: 30%;
+  padding: 0 4px;
+  overflow: hidden;
+  font-size: 25%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 2500px) {
+  .intro h1{
+    padding-left: 15px;
+    font-size: 780%;
+  }
+
+  .intro p {
+    font-size: 349%;
+  }
+
+  .work {
+    height: 550px;
+  }
+
+  .prev {
+    top: -8.1%;
+  }
+
+  .next {
+    top: -8.1%;
+  }
+
+}
+
+
+
+.content {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0.1%;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  border-radius: 15px;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-details {
+  position: absolute;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 93%;
+  top: 80%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+  font-family: Courier, monospace;
+  color: white;
+  font-size: medium;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+main {
+  transition: all 0.5s;
+  font-variation-settings: "wght" 900, "ital" 1;
+  font-size: 400%;
+  text-align: center;
+  color: transparent;
+  font-family: 'Sketch Rockwell', sans-serif;
+  text-shadow: 
+    10px 10px 0px #ffc6c7, 
+    15px 15px 0px #594a4e,
+    20px 20px 0px #ffc6c7,
+    25px 25px 0px #594a4e, 
+    45px 45px 10px #ffffff;
+  cursor: pointer;
+}
+
+main h1{
+  color: #33272a
+}
+
+main:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+}
+
+#me{
+  width: 40%;
+  position: initial;
+  left: 30%;
+  top: 28%;
+  opacity: 0;
+}
+
+main:hover #me{
+  opacity: 1;
+  -webkit-transition: 1.5s all;
+  -moz-transition: 1.5s all;
+  -ms-transition: 1.5s all;
+  -o-transition: 1.5s all;
+  transition: 1.5s all;
+}
+
+main h1{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.dec{
+  display: inline-block;
+  position: absolute;
+  margin-block: 50px;
+  margin-left: 50px;
+}
+
+.s1{
+  width: 11%;
+  right: 21%;
+  top: 249%;
+  transform: rotate(30deg);
+}
+
+.s2{
+  width: 11%;
+  right: 72%;
+  top: 301%;
+}
+
+
+.o2{
+  width: 7%;
+  right: 71%;
+  top: 241%;
+}
+
+.o1{
+  width: 11%;
+  right: 21%;
+  top: 274%;
+}
+
+
+
+.flag{
+  width: 26%;
+  right: 3%;
+  top: 70%;
+  transform: rotate(30deg);
+}
+
+#icon{
+  width: 36%;
+  position: absolute;
+  left: 13%;
+  top: 15%;
+  padding: 15px;
+  border-width: thick;
+  border-style: dashed;
+  border-radius: 5px;
+
+}
+
+.pf{
+  text-align: justify;
+  margin-left: 52%;
+  margin-top: -1%;
+  width: 38%;
+
+}
+
+.pf p{
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.8;
+  font-weight: bold;
+  text-align:left;
+}
+
+.works {
+  margin-left: 9%;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3.5%;
+}
+
+.work {
+  height: 263px;
+  max-width: 30%;
+  padding: 9px;
+  overflow: hidden;
+  width: 30%;
+  border: 2px dashed #929292;
+  border-radius: 11px;
+  margin: 0.5%;
+}
+
+.work img{
+  width: 100%;
+  border-radius: 11px;
+  height: 63%;
+  object-fit: cover;
+  
+}
+
+.work:hover {
+  border: 2px dashed #1a1a1a;
+
+}
+
+
+
+/* Clear floats after the columns */
+.works:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.mySlides {display:none}
+
+.prev{
+  position: relative;
+  top: -19.1%;
+  display: inline;
+  font-size: 35px;
+  left: 8%;
+}
+
+.next{
+  position: relative;
+  top: -19.1%;
+  display: inline;
+  font-size: 35px;
+  left: 90.5%;
+}
+
+div.gallery {
+  border: 2px dashed #929292;
+  border-radius: 11px;
+  height: 229px;
+}
+
+div.gallery:hover {
+  border: 2px Dashed #1a1a1a;
+
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 11px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+
+.ws{
+  width: 83%;
+  margin-left: 9%;
+  display: table;
+  height: 22%;
+}
+
+
+
+
+.overlay_flight_traveldil {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay_flight_traveldil:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.popup_flight_travlDil {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 75%;
+  position: relative;
+  transition: all 2s ease-in-out;
+  height: 80%;
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+}
+
+.popup_flight_travlDil img{
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.popup_flight_travlDil .close_flight_travelDl {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup_flight_travlDil .content_flightht_travel_dil {
+  overflow: auto;
+  margin: 0 0 0 10px;
+  height: 100%;
+  width: 83%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.samples{
+  overflow-y: auto;
+  height:  100%;
+}
+
+
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+h4{
+  margin: 0;
+}
+
+
+#date-container{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
